@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+
+    <title>Gallery Pictures</title>
+    <script>
+
+
+        var pictures = new Array(12);
+        var counter = 0;
+    
+    
+        function initialize() {
+    
+            pictures[0] = new Image(50, 50);
+            pictures[0].src="images/pic12.jpeg";
+            pictures[1] = new Image(50, 50);
+            pictures[1].src = "images/pic2.jpeg";
+            pictures[2] = new Image(50, 50);
+            pictures[2].src = "images/pic3.jpeg";
+            pictures[3] = new Image(50, 50);
+            pictures[3].src = "images/pic4.jpeg";
+            pictures[4] = new Image(50, 50);
+            pictures[4].src = "images/pic5.jpeg";
+            pictures[5] = new Image(50, 50);
+            pictures[5].src = "images/pic6.jpeg";
+            pictures[6] = new Image(50, 50);
+            pictures[6].src = "images/pic7.jpeg";
+            pictures[7] = new Image(50, 50);
+            pictures[7].src = "images/pic8.jpeg";
+            pictures[8] = new Image(50, 50);
+            pictures[8].src = "images/pic9.jpeg";
+            pictures[9] = new Image(50, 50);
+            pictures[9].src = "images/pic10.jpeg";
+            pictures[10] = new Image(50, 50);
+            pictures[10].src = "images/pic11.jpeg";
+            pictures[11] = new Image(50, 50);
+            pictures[11].src = "images/pic1.jpeg";
+          
+            
+        }
+    
+        function upDate() {
+    
+            counter++;
+            if (counter > 12) {
+                counter = 0;
+            }
+            document.imgDisplay.src = pictures[counter].src;
+            document.myForm.txtDescription.value = description[counter];
+        }
+    
+    </script>
+    
+</head>
+
+<body onLoad = "initialize()">
+    <nav>
+    <label class="logo"> EK</label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+<p class="gallerypara"> <strong>Some pictures of...</strong></p>
+<div class="contanier">
+    <form name = "myForm">
+    <img src = "images/pic12.jpeg"
+     name = "imgDisplay"
+	 height = 500
+     width = 700;>
+     <br>
+    <input class="btn" type = "button"
+       value = "Next" onClick = "upDate()">
+</form>
+</div>
+</body>
+</html>

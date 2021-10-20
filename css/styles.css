@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    text-align: center;
+}
+nav{
+    background:rgb(241, 6, 136) ;
+    height: 70px;
+    width: 100%;
+    font-family: 'Patua One', cursive;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+color:white;
+font-size: 17px;
+text-transform: uppercase;
+padding: 7px 13px;
+border-radius: 3px;
+}
+.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+.logo{
+color:white;
+font-size: 35px;
+line-height: 80px;
+padding: 0 20px;
+font-weight: bold;
+float:left;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+
+}
+h1{
+    margin: 0 auto;
+}
+
+hr{
+    border-style: none;
+}  
+.endhr{
+    border-top-style: solid;
+    border-color:black;
+    width: 100%;
+    border-width:1px;
+}
+
+.top{
+    background:url("../images/1.PNG") no-repeat;
+    background-size: cover;
+    height: 600px;
+  
+}
+
+.fullstackpa{
+    font-family: 'Space Mono', monospace;
+    font-size: small;
+}
+
+.second-container{
+    background: rgb(243, 219, 227);
+
+}
+.eitImg{
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+}
+.cookimg{
+    border-radius:200px
+}
+.skillspix{
+    border-radius: 200px;
+}
+h2{
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Patua One', cursive;
+}
+
+.scroll{
+    /* margin-top: 20px; */
+    font-family: 'Rubik Beastly', cursive;
+    left: 20px; 
+    /* top:10%; */
+  text-align: center;
+  padding: 10px; 
+  background:rgb(243, 219, 227);
+     
+    
+}
+
